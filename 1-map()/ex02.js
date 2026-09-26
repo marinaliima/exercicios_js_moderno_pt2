@@ -17,4 +17,4 @@ const produtosComDesconto = produtos.map((p) => {
     };
 });
 
-console.log(produtosComDesconto);
+console.log("Array com 10% de desconto: \n", produtosComDesconto);

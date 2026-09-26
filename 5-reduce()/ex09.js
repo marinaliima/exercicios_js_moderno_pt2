@@ -11,4 +11,4 @@ const somaEstoque = produtos.reduce((acumulador, produtos) => {
     return acumulador + produtos.estoque;
 }, 0);
 
-console.log("Soma total de estoques:", somaEstoque);
+console.log("Soma total de itens em estoque:", somaEstoque);

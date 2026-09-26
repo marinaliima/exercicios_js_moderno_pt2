@@ -1,4 +1,4 @@
-// 3. Crie um array contendo apenas os produtos que estão ativos (ativo: true).
+// 6. Encontre o primeiro produto que esteja com o estoque zerado.
 
 const produtos = [
     { id: 1, nome: "Notebook", preco: 3500, estoque: 5, ativo: true },
@@ -7,6 +7,6 @@ const produtos = [
     { id: 4, nome: "Monitor", preco: 1200, estoque: 3, ativo: true }
 ];
 
-const produtosAtivos = produtos.filter((p) => p.ativo === true);
+const primeiroZerado = produtos.find((p) => p.estoque === 0);
 
-console.log(produtosAtivos);
+console.log("Primeiro produto do array com estoque zerado: \n", primeiroZerado);

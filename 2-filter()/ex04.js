@@ -1,4 +1,4 @@
-// 1. Crie um novo array contendo apenas os nomes dos produtos em letras maiúsculas.
+// 4. Crie um array contendo apenas os produtos que possuem estoque maior que 0 e custam mais de R$ 100.
 
 const produtos = [
     { id: 1, nome: "Notebook", preco: 3500, estoque: 5, ativo: true },
@@ -7,6 +7,6 @@ const produtos = [
     { id: 4, nome: "Monitor", preco: 1200, estoque: 3, ativo: true }
 ];
 
-const produtosMaiusculos = produtos.map((p) => p.nome.toUpperCase());
+const produtosFiltrados = produtos.filter((p) => p.estoque > 0 && p.preco > 100);
 
-console.log(produtosMaiusculos);
+console.log("Array de produtos com estoque: \n", produtosFiltrados);

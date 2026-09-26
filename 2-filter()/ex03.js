@@ -1,4 +1,4 @@
-// 5. Encontre o produto com id === 3.
+// 3. Crie um array contendo apenas os produtos que estão ativos (ativo: true).
 
 const produtos = [
     { id: 1, nome: "Notebook", preco: 3500, estoque: 5, ativo: true },
@@ -7,6 +7,6 @@ const produtos = [
     { id: 4, nome: "Monitor", preco: 1200, estoque: 3, ativo: true }
 ];
 
-const encontraProduto = produtos.find((p) => p.id === 3);
+const produtosAtivos = produtos.filter((p) => p.ativo === true);
 
-console.log(encontraProduto);
+console.log("Array de produtos ativos: \n", produtosAtivos);

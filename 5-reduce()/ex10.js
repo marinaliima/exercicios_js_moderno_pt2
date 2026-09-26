@@ -11,4 +11,4 @@ const patrimonioTotalEstoque = produtos.reduce((acumulador, produto) => {
     return acumulador + (produto.preco * produto.estoque);
 }, 0);
 
-console.log(`Patrimônio total em estoque: R$ ${patrimonioTotalEstoque}`);
+console.log("Patrimônio total em estoque: R$", patrimonioTotalEstoque);

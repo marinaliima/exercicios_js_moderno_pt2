@@ -1,4 +1,4 @@
-// 6. Encontre o primeiro produto que esteja com o estoque zerado.
+// 1. Crie um novo array contendo apenas os nomes dos produtos em letras maiúsculas.
 
 const produtos = [
     { id: 1, nome: "Notebook", preco: 3500, estoque: 5, ativo: true },
@@ -7,6 +7,6 @@ const produtos = [
     { id: 4, nome: "Monitor", preco: 1200, estoque: 3, ativo: true }
 ];
 
-const primeiroZerado = produtos.find((p) => p.estoque === 0);
+const produtosMaiusculos = produtos.map((p) => p.nome.toUpperCase());
 
-console.log(primeiroZerado);
+console.log("Nomes em letras maiúsculas: \n", produtosMaiusculos);

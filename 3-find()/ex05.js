@@ -1,4 +1,4 @@
-// 4. Crie um array contendo apenas os produtos que possuem estoque maior que 0 e custam mais de R$ 100.
+// 5. Encontre o produto com id === 3.
 
 const produtos = [
     { id: 1, nome: "Notebook", preco: 3500, estoque: 5, ativo: true },
@@ -7,6 +7,6 @@ const produtos = [
     { id: 4, nome: "Monitor", preco: 1200, estoque: 3, ativo: true }
 ];
 
-const produtosFiltrados = produtos.filter((p) => p.estoque > 0 && p.preco > 100);
+const encontraProduto = produtos.find((p) => p.id === 3);
 
-console.log(produtosFiltrados);
+console.log("Produto com id = 3: \n", encontraProduto);
